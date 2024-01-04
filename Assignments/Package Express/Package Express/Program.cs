@@ -28,12 +28,12 @@ namespace Package_Express
                 float packageHeight = Convert.ToSingle(Console.ReadLine()); //declare packageHeight and assign it with a input number
                 Console.WriteLine("\n" + "Please input your package Lenth without a unit");
                 float packageLength = Convert.ToSingle(Console.ReadLine()); //declare packageLenth and assign it with a input number
-                if (packageWidth > 50 ||  packageHeight > 50 || packageLength > 50) //execute it if any of dimensions are greater than 50
+                if (packageWidth + packageHeight + packageLength > 50) //execute it if add these three greater than 50
                 {
                     Console.WriteLine("\n" + "Package too big to be shipped via Package Express.");
                 }
-                else if(packageWidth > 0 && packageWidth <= 50 && packageHeight > 0 && packageHeight <= 50 && packageLength > 0 && packageLength <= 50)
-                {  //execute this if none of the dimensions is greater than 50 meanwhile they all greater than 0
+                else if(packageWidth + packageWidth + packageHeight <= 50 && packageWidth + packageWidth + packageHeight > 0)
+                {  
                     Console.WriteLine("\n" + "Thank you for your cooperation. Your package is not oversized");
 
                     float quote = packageWeight * packageWidth * packageHeight * packageLength / 100; //calculate total quote based on all input infomation
