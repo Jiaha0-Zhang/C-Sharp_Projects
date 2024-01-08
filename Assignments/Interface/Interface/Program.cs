@@ -10,9 +10,10 @@ namespace Interface
     {
         static void Main()
         {
-            Employee employee = new Employee() { firstName = "Sam", lastName = "Smith" }; //instantiation
+            //instantiation
+             IQuittable emobject = new Employee() { firstName = "Sam", lastName = "Smith" }; 
 
-            employee.Quit(); //call the interface
+            emobject.Quit(); //call the interface
 
             Console.ReadLine();
         }
