@@ -38,7 +38,10 @@ namespace LAMBDA
 
             List<Employee> firstNameJoe = employees.Where(x => x.FirstName == "Joe").ToList(); //lambda expression
             //Console.WriteLine(firstNameJoe); 
+
+            //PLEASE SEE HERE
             //I don't know why I can't find properties in firstNameJoe, unlike normal foreach loop, "employee" does have ID,FirstName and  LastName property
+            //PLEASE SEE HERE
 
             List<Employee> idGreaterThan5 = employees.Where(x => x.Id == 5).ToList(); //lambda expression
 
