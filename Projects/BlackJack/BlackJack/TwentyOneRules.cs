@@ -30,7 +30,7 @@ namespace BlackJack
         {
             int aceCount = Hand.Count(x => x.Face == Face.Ace);
             int[] result = new int[aceCount + 1];
-            int value = Hand.Sum(x => -_cardValues[x.Face]);
+            int value = Hand.Sum(x => _cardValues[x.Face]);
             result[0] = value;
             if (result.Length == 1)
             {
