@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackJack
+namespace Casino
 {
     public class TwentyOneGame : Game
     {
@@ -92,7 +92,7 @@ namespace BlackJack
                     if(busted)
                     {
                         Dealer.Balance += Bets[player];
-                        Console.WriteLine("{0}Busted! You lose your bet of {1}. Your balance is now {2}.", player.Name, Bets[player],player.Balance);
+                        Console.WriteLine("{0} Busted! You lose your bet of {1}. Your balance is now {2}.", player.Name, Bets[player],player.Balance);
                         Console.WriteLine("Do you want to play again?");
                         answer = Console.ReadLine().ToLower();
                         if(answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya" || answer == "yea")
