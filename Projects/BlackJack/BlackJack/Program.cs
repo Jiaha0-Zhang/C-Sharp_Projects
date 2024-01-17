@@ -107,9 +107,7 @@ namespace BlackJack
         private static List<ExceptionEntity> ReadExceptions()
         {
             string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=TwentyOneGame;" +
-                                      "Integrated Security=True;Connect Timeout=30;Encrypt=False;" +
-                                      "Trust Server Certificate=False;Application Intent=ReadWrite;" +
-                                      "Multi Subnet Failover=False";
+                                      "Integrated Security=True;Connect Timeout=30;Encrypt=False;";
 
             string queryString = @"Select Id, ExceptionType, ExceptionMessage, TimeStamp From Exceptions";
 
