@@ -177,28 +177,8 @@ namespace CarInsurance.Controllers
 
         public ActionResult Admin() //questionable here.
         {
-            return View();
+            return View(db.Table.ToList());
         }
-        //public ActionResult Table(string firstName, string lastName, string emailAddress)
-        //{
-        //    if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(emailAddress))
-        //    {
-        //        return View("~/Views/Shared/Error.cshtml");
-        //    }
-        //    else
-        //    {
-        //        using (InsuranceEntities db = new InsuranceEntities())
-        //        {
-        //            var table = new Table();
-        //            table.FirstName = firstName;
-        //            table.LastName = lastName;
-        //            table.EmailAddress = emailAddress;
-
-        //            db.Table.Add(table);
-        //            db.SaveChanges();
-        //        }
-        //        return View("Success");
-        //    }
-        //}
+       
     }
 }
