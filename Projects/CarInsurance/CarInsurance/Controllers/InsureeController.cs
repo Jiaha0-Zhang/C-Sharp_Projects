@@ -79,7 +79,7 @@ namespace CarInsurance.Controllers
                 if(table.CarMake.ToLower() == "porsche") //If the car's Make is a Porsche, add $25 to the price.
                 {
                     baseQuote += 25;
-                    if(table.CarMake.ToLower() == "911 carrera")
+                    if(table.CarModel.ToLower() == "911 carrera")
                     {  //If the car's Make is a Porsche and its model is a 911 Carrera, add an additional $25 to the price.
                         baseQuote += 25;
                     }
