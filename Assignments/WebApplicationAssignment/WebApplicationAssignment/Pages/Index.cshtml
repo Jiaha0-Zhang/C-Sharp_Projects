@@ -1,0 +1,8 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "The Actual Server Time";
+}
+
+<h2>@ViewData["Title"]</h2>
+<p>Current Server time: <div id="serverTime">@Model.actualTime.ToLocalTime().ToString()<div/></p>
