@@ -11,10 +11,8 @@ namespace Code_First_assignment
     {
         static void Main()
         {
-            string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=master;" +
-                                      "Integrated Security=True;Connect Timeout=30;Encrypt=False;";
 
-            using (var context = new StudentContext(connectionString))
+            using (var context = new StudentContext())
             {
                 var newStudent = new Student
                 {

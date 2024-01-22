@@ -11,9 +11,5 @@ namespace Code_First_assignment
     {
         public DbSet<Student> Students { get; set; }
         public DbSet<StudentScore> StudentScores { get; set; }
-
-        public StudentContext(string connectionString) : base(connectionString)
-        {
-        }
     }
 }
